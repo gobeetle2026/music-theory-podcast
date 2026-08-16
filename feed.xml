@@ -21,7 +21,7 @@
     <itunes:category text="Education"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>Sun, 16 Aug 2026 08:29:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 08:41:58 +0000</lastBuildDate>
     <item>
       <title>おまけ 耳のリセットドリル</title>
       <description>おまけの回。黒鍵の多い調(ロ長調など)を耳コピーしたあとに聴く、実用的なリセット用ドリル。とにかくたくさんの音を鳴らす回。
@@ -939,8 +939,8 @@ Day26を始めましょう。前回は、対位法入門について学びまし
       <itunes:summary>旋律に表情を与える3種類の非和声音、経過音・刺繍音・掛留音を学ぶ回。和音に含まれない音がどう旋律を歌わせているかを体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day26</guid>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day26_%E9%9D%9E%E5%92%8C%E5%A3%B0%E9%9F%B3/audio.m4a" length="2491775" type="audio/x-m4a"/>
-      <itunes:duration>5:26</itunes:duration>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day26_%E9%9D%9E%E5%92%8C%E5%A3%B0%E9%9F%B3/audio.m4a" length="2482691" type="audio/x-m4a"/>
+      <itunes:duration>5:25</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
       <itunes:episode>26</itunes:episode>
