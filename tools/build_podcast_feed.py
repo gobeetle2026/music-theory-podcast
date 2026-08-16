@@ -12,6 +12,7 @@ import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
+from urllib.parse import quote
 from xml.sax.saxutils import escape
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -49,7 +50,7 @@ def episode_item(*, guid, title, description, audio_rel_path, pub_date, episode_
     audio_path = os.path.join(BASE, audio_rel_path)
     size_bytes = os.path.getsize(audio_path)
     duration = get_duration_seconds(audio_path)
-    url = f"{BASE_URL}/{audio_rel_path}"
+    url = f"{BASE_URL}/{quote(audio_rel_path)}"
 
     extra = ""
     if episode_num is not None:
