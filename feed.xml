@@ -21,7 +21,7 @@
     <itunes:category text="Education"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>Sun, 16 Aug 2026 08:41:58 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 08:53:13 +0000</lastBuildDate>
     <item>
       <title>おまけ 耳のリセットドリル</title>
       <description>おまけの回。黒鍵の多い調(ロ長調など)を耳コピーしたあとに聴く、実用的なリセット用ドリル。とにかくたくさんの音を鳴らす回。
@@ -283,7 +283,7 @@
       <itunes:summary>おまけの回。黒鍵の多い調(ロ長調など)を耳コピーしたあとに聴く、実用的なリセット用ドリル。とにかくたくさんの音を鳴らす回。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-bonus02</guid>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/bonus02_%E8%80%B3%E3%81%AE%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%83%89%E3%83%AA%E3%83%AB/audio.m4a" length="2276003" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/bonus02_%E8%80%B3%E3%81%AE%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%83%89%E3%83%AA%E3%83%AB/audio.m4a" length="2271262" type="audio/x-m4a"/>
       <itunes:duration>5:25</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>bonus</itunes:episodeType>
@@ -414,7 +414,7 @@ Day20で学んだ近親調への転調に比べると、シ長調とソ長調は
       <itunes:summary>おまけの回。X JAPANの名曲を、実際のシ長調の響きで、これまで学んだ理論(転回形・対位法・転調)を使って読み解く。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-bonus01</guid>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/bonus01_%E3%82%A8%E3%83%B3%E3%83%89%E3%83%AC%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%B3/audio.m4a" length="2861100" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/bonus01_%E3%82%A8%E3%83%B3%E3%83%89%E3%83%AC%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%B3/audio.m4a" length="2859153" type="audio/x-m4a"/>
       <itunes:duration>6:14</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>bonus</itunes:episodeType>
@@ -491,7 +491,7 @@ Day14で確認した通り、悲愴ソナタは、ハ短調のトニックから
       <itunes:summary>最終回。Day14の続きとして悲愴ソナタのアレグロを読み解き、月光との対比を通して、30日間の学びを締めくくる。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day30</guid>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day30_%E6%82%B2%E6%84%B4%E3%82%92%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F/audio.m4a" length="2113382" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day30_%E6%82%B2%E6%84%B4%E3%82%92%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F/audio.m4a" length="2114653" type="audio/x-m4a"/>
       <itunes:duration>4:32</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -567,7 +567,7 @@ Day29を始めましょう。Phase6、作曲の基礎知識が終わり、いよ
       <itunes:summary>Day23の続き。月光ソナタ第一楽章を、ベートーヴェン自身の演奏指示「センツァ・ソルディーノ」の視点も交えて、あらためて読み解く。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day29</guid>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day29_%E6%9C%88%E5%85%89%E3%82%92%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F/audio.m4a" length="2200561" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day29_%E6%9C%88%E5%85%89%E3%82%92%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F/audio.m4a" length="2202866" type="audio/x-m4a"/>
       <itunes:duration>4:42</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -664,7 +664,7 @@ Day19では、同主調のハ短調から、4番目の和音、そして6番目�
       <itunes:summary>Phase6最終回。Day19の借用和音の考え方を広げ、フラット7番目の和音とナポリの和音という、さらに2つの色を手に入れる。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day28</guid>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day28_%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8/audio.m4a" length="2291349" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day28_%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8/audio.m4a" length="2293475" type="audio/x-m4a"/>
       <itunes:duration>4:56</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -939,7 +939,7 @@ Day26を始めましょう。前回は、対位法入門について学びまし
       <itunes:summary>旋律に表情を与える3種類の非和声音、経過音・刺繍音・掛留音を学ぶ回。和音に含まれない音がどう旋律を歌わせているかを体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day26</guid>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day26_%E9%9D%9E%E5%92%8C%E5%A3%B0%E9%9F%B3/audio.m4a" length="2482691" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day26_%E9%9D%9E%E5%92%8C%E5%A3%B0%E9%9F%B3/audio.m4a" length="2482483" type="audio/x-m4a"/>
       <itunes:duration>5:25</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1163,7 +1163,7 @@ Day24を始めましょう。前回は、ソナタ形式について学びまし
       <itunes:summary>1つの主題を姿を変えながら繰り返す、変奏曲形式を学ぶ回。旋法やリズムが変わっても、和音の役割の骨組みは保たれ続けることを体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day24</guid>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day24_%E5%A4%89%E5%A5%8F%E6%9B%B2%E5%BD%A2%E5%BC%8F/audio.m4a" length="2184499" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day24_%E5%A4%89%E5%A5%8F%E6%9B%B2%E5%BD%A2%E5%BC%8F/audio.m4a" length="2186378" type="audio/x-m4a"/>
       <itunes:duration>4:42</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1260,7 +1260,7 @@ Day23を始めましょう。前回は、楽式について学びました。二
       <itunes:summary>月光ソナタ第一楽章を題材に、クラシック最重要の形式、ソナタ形式を学ぶ回。バラバラの調が最後に1つへまとまる仕組みを体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day23</guid>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day23_%E3%82%BD%E3%83%8A%E3%82%BF%E5%BD%A2%E5%BC%8F/audio.m4a" length="2694871" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day23_%E3%82%BD%E3%83%8A%E3%82%BF%E5%BD%A2%E5%BC%8F/audio.m4a" length="2692261" type="audio/x-m4a"/>
       <itunes:duration>5:47</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1535,7 +1535,7 @@ Day21を始めましょう。前回でPhase4、機能和声と転調が終わり
       <itunes:summary>Phase5「楽曲の構造」の最初の回。曲を組み立てる最小単位、動機からフレーズ、質問と答えのペアである楽節までを学ぶ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day21</guid>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day21_%E5%8B%95%E6%A9%9F%E3%81%A8%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA/audio.m4a" length="2810419" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day21_%E5%8B%95%E6%A9%9F%E3%81%A8%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA/audio.m4a" length="2805799" type="audio/x-m4a"/>
       <itunes:duration>6:05</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1656,7 +1656,7 @@ Day18で学んだ二次ドミナントは、和音を一瞬だけ主役に見せ
       <itunes:summary>Phase4最終回。二次ドミナントとは違い、新しい調を本当の主役として扱う「転調」と、橋渡し役のピボットコードを学ぶ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day20</guid>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day20_%E8%BB%A2%E8%AA%BF%E3%81%AE%E5%9F%BA%E7%A4%8E/audio.m4a" length="2664605" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day20_%E8%BB%A2%E8%AA%BF%E3%81%AE%E5%9F%BA%E7%A4%8E/audio.m4a" length="2667975" type="audio/x-m4a"/>
       <itunes:duration>5:49</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1780,7 +1780,7 @@ Day19を始めましょう。前回は、二次ドミナントについて学び
       <itunes:summary>同主調(同じ主音を持つ長調と短調)から和音の色をそのまま借りてくる、借用和音を学ぶ回。二次ドミナントとの違いも整理する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day19</guid>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day19_%E5%80%9F%E7%94%A8%E5%92%8C%E9%9F%B3/audio.m4a" length="2696943" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day19_%E5%80%9F%E7%94%A8%E5%92%8C%E9%9F%B3/audio.m4a" length="2696886" type="audio/x-m4a"/>
       <itunes:duration>5:50</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1916,7 +1916,7 @@ Day18を始めましょう。前回は、機能和声を深掘りしました。
       <itunes:summary>ドミナントの働きを、トニック以外の和音にも一時的に作り出す、二次ドミナントを学ぶ回。音階の外の音1つで生まれる「一瞬のトニック化」を体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day18</guid>
       <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day18_%E4%BA%8C%E6%AC%A1%E3%83%89%E3%83%9F%E3%83%8A%E3%83%B3%E3%83%88/audio.m4a" length="2582268" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day18_%E4%BA%8C%E6%AC%A1%E3%83%89%E3%83%9F%E3%83%8A%E3%83%B3%E3%83%88/audio.m4a" length="2581652" type="audio/x-m4a"/>
       <itunes:duration>5:36</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -2046,8 +2046,8 @@ Day17を始めましょう。前回は、リズムパターンとシンコペー
       <itunes:summary>Day13のトニック・サブドミナント・ドミナントを深掘りする回。残りの4つの和音がそれぞれどの機能の仲間かを整理し、Day13の偽終止の謎も解ける。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day17</guid>
       <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day17_%E6%A9%9F%E8%83%BD%E5%92%8C%E5%A3%B0/audio.m4a" length="2706426" type="audio/x-m4a"/>
-      <itunes:duration>5:50</itunes:duration>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day17_%E6%A9%9F%E8%83%BD%E5%92%8C%E5%A3%B0/audio.m4a" length="2707983" type="audio/x-m4a"/>
+      <itunes:duration>5:51</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
       <itunes:episode>17</itunes:episode>
@@ -2439,7 +2439,7 @@ Day13で学んだ半終止、ドミナントで止まって次への期待を残
       <itunes:summary>ここまでの理論を使って、悲愴ソナタ冒頭のグラーヴェ序奏を実際に聴き解く回。ハ短調のトニックから減七の和音、緊張感の強い属九の和音へ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day14</guid>
       <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day14_%E5%AE%9F%E8%B7%B51_%E6%82%B2%E6%84%B4%E3%81%AE%E5%92%8C%E9%9F%B3%E9%80%B2%E8%A1%8C/audio.m4a" length="2565082" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day14_%E5%AE%9F%E8%B7%B51_%E6%82%B2%E6%84%B4%E3%81%AE%E5%92%8C%E9%9F%B3%E9%80%B2%E8%A1%8C/audio.m4a" length="2565279" type="audio/x-m4a"/>
       <itunes:duration>5:28</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -2584,8 +2584,8 @@ Day13を始めましょう。前回は、ダイアトニックコードについ
       <itunes:summary>I・IV・Vにトニック・サブドミナント・ドミナントという役割を与え、フレーズの終わり方(カデンツ)を学ぶ回。Phase2の総仕上げ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day13</guid>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day13_%E4%B8%BB%E8%A6%81%E4%B8%89%E5%92%8C%E9%9F%B3%E3%81%A8%E3%82%AB%E3%83%87%E3%83%B3%E3%83%84/audio.m4a" length="2966905" type="audio/x-m4a"/>
-      <itunes:duration>6:26</itunes:duration>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day13_%E4%B8%BB%E8%A6%81%E4%B8%89%E5%92%8C%E9%9F%B3%E3%81%A8%E3%82%AB%E3%83%87%E3%83%B3%E3%83%84/audio.m4a" length="2967624" type="audio/x-m4a"/>
+      <itunes:duration>6:27</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
       <itunes:episode>13</itunes:episode>
@@ -2699,7 +2699,7 @@ Day12を始めましょう。前回は、和音の転回形について学びま
       <itunes:summary>音階の音だけで作れる7つの和音、ダイアトニックコードを学ぶ回。長・短・短・長・長・短・減という規則性が、これまでの知識を1つにつなげる。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day12</guid>
       <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day12_%E3%83%80%E3%82%A4%E3%82%A2%E3%83%88%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%89/audio.m4a" length="2656073" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day12_%E3%83%80%E3%82%A4%E3%82%A2%E3%83%88%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%89/audio.m4a" length="2653497" type="audio/x-m4a"/>
       <itunes:duration>5:40</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -2805,7 +2805,7 @@ Day11を始めましょう。前回は、七の和音と、属七の和音につ
       <itunes:summary>同じ和音でも一番下の音が変わると響きの重心が変わる、転回形を学ぶ回。低音の動きをなめらかにする実用的な理由も理解する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day11</guid>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day11_%E5%92%8C%E9%9F%B3%E3%81%AE%E8%BB%A2%E5%9B%9E%E5%BD%A2/audio.m4a" length="2594709" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day11_%E5%92%8C%E9%9F%B3%E3%81%AE%E8%BB%A2%E5%9B%9E%E5%BD%A2/audio.m4a" length="2595057" type="audio/x-m4a"/>
       <itunes:duration>5:34</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -2908,8 +2908,8 @@ Day10を始めましょう。前回は、減三和音と増三和音について
       <itunes:summary>三和音にもう1音重ねる七の和音、中でも最重要の属七の和音を学ぶ回。「主和音に帰りたがる力」の正体に迫る。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day10</guid>
       <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day10_%E4%B8%83%E3%81%AE%E5%92%8C%E9%9F%B3/audio.m4a" length="2648248" type="audio/x-m4a"/>
-      <itunes:duration>5:40</itunes:duration>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day10_%E4%B8%83%E3%81%AE%E5%92%8C%E9%9F%B3/audio.m4a" length="2660262" type="audio/x-m4a"/>
+      <itunes:duration>5:41</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
       <itunes:episode>10</itunes:episode>
@@ -3147,7 +3147,7 @@ Day8を始めましょう。前回は、調号と五度圏について学びま�
       <itunes:summary>和音の基本、三和音に入る回。長三和音と短三和音の作り方と、真ん中の音1つが曲全体の明るさを左右する仕組みを学ぶ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day08</guid>
       <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day08_%E4%B8%89%E5%92%8C%E9%9F%B3/audio.m4a" length="2594618" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day08_%E4%B8%89%E5%92%8C%E9%9F%B3/audio.m4a" length="2593308" type="audio/x-m4a"/>
       <itunes:duration>5:37</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -3253,7 +3253,7 @@ Day7を始めましょう。前回は、短音階について学びました。�
       <itunes:summary>曲によってシャープ・フラットの数が違う理由を学ぶ回。五度圏の規則と、悲愴・月光にもつながる「平行調」の関係を理解する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day07</guid>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day07_%E8%AA%BF%E5%8F%B7%E3%81%A8%E4%BA%94%E5%BA%A6%E5%9C%8F/audio.m4a" length="3112879" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day07_%E8%AA%BF%E5%8F%B7%E3%81%A8%E4%BA%94%E5%BA%A6%E5%9C%8F/audio.m4a" length="3105882" type="audio/x-m4a"/>
       <itunes:duration>6:38</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -3434,7 +3434,7 @@ Day6を始めましょう。前回は、長音階について学びました。�
       <itunes:summary>悲愴・月光の切なさの正体に迫る回。自然的・和声的・旋律的という3種類の短音階と、「導音」が生む強い戻りの感覚を学ぶ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day06</guid>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day06_%E7%9F%AD%E9%9F%B3%E9%9A%8E/audio.m4a" length="3332457" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day06_%E7%9F%AD%E9%9F%B3%E9%9A%8E/audio.m4a" length="3332365" type="audio/x-m4a"/>
       <itunes:duration>7:20</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
