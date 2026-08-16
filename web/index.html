@@ -1,0 +1,651 @@
+<title>音楽理論学習 — 目次</title>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171310;
+    --surface: #211c17;
+    --surface-2: #29231d;
+    --text: #ece6da;
+    --text-muted: #a99d8a;
+    --accent: #d97a5e;
+    --accent-ink: #1c110c;
+    --brass: #d9b568;
+    --hairline: rgba(236, 230, 218, 0.14);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171310;
+  --surface: #211c17;
+  --surface-2: #29231d;
+  --text: #ece6da;
+  --text-muted: #a99d8a;
+  --accent: #d97a5e;
+  --accent-ink: #1c110c;
+  --brass: #d9b568;
+  --hairline: rgba(236, 230, 218, 0.14);
+}
+:root {
+  --bg: #e9e2d2;
+  --surface: #f8f4e9;
+  --surface-2: #f1ead9;
+  --text: #2a241c;
+  --text-muted: #6b6153;
+  --accent: #8a3324;
+  --accent-ink: #fbeee9;
+  --brass: #8a6a1f;
+  --hairline: rgba(42, 36, 28, 0.13);
+
+  --serif: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", ui-serif, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+.wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem calc(6.5rem + env(safe-area-inset-bottom));
+}
+.eyebrow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+.eyebrow a { color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--hairline); }
+.eyebrow a:hover { color: var(--accent); border-color: var(--accent); }
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.day-num {
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 0;
+  text-wrap: balance;
+}
+.desc {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  margin: 0.9rem 0 1.8rem;
+  text-wrap: pretty;
+}
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: var(--surface);
+  border-top: 1px solid var(--hairline);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
+  padding: 0.9rem 1.25rem calc(0.9rem + env(safe-area-inset-bottom));
+}
+.player-inner {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.player audio {
+  flex: 1;
+  min-width: 0;
+  display: block;
+}
+.rewind-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+  background: var(--surface-2);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  cursor: pointer;
+}
+.rewind-btn:hover { border-color: var(--accent); color: var(--accent); }
+.rewind-btn:active { transform: scale(0.95); }
+.rewind-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rewind-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+.quiz-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--brass);
+  cursor: pointer;
+}
+.quiz-btn:hover { color: var(--accent); }
+.quiz-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.quiz-btn svg { width: 11px; height: 11px; flex-shrink: 0; }
+.duration-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.55rem;
+  letter-spacing: 0.03em;
+}
+h2 {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.8rem;
+}
+.points {
+  list-style: none;
+  margin: 0 0 2.2rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.points li {
+  position: relative;
+  padding-left: 1.3rem;
+  font-size: 0.94rem;
+  color: var(--text);
+}
+.points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brass);
+}
+figure.diagram {
+  margin: 0 0 2.2rem;
+}
+figure.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+figure.diagram figcaption {
+  margin-top: 0.9rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  text-align: center;
+}
+details {
+  border-top: 1px solid var(--hairline);
+  padding-top: 1.1rem;
+  margin-bottom: 2.2rem;
+}
+summary {
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--text);
+}
+summary::marker { color: var(--brass); }
+.transcript {
+  margin-top: 1.2rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  max-width: 65ch;
+}
+.transcript p { margin: 0 0 0.9rem; }
+.tone-line {
+  color: var(--brass);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+nav.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--hairline);
+  padding-top: 1.4rem;
+}
+nav.pager a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.88rem;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  flex: 1;
+}
+nav.pager a.disabled {
+  color: var(--text-muted);
+  pointer-events: none;
+  opacity: 0.5;
+}
+nav.pager .label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+nav.pager a:last-child { text-align: right; }
+
+.phase-group { margin-bottom: 2.4rem; }
+.phase-group:last-child { margin-bottom: 0; }
+.phase-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.4rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--hairline);
+}
+.phase-label {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.phase-rows { display: flex; flex-direction: column; }
+.row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-top: 1px solid var(--hairline);
+  text-decoration: none;
+  color: var(--text);
+}
+.phase-rows .row:first-child { border-top: none; }
+.row-num {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  width: 2.2rem;
+  flex-shrink: 0;
+}
+.row-title { display:block; font-family: var(--serif); font-weight:600; font-size:1.05rem; margin-bottom:0.25rem; }
+.row-desc { display:block; color: var(--text-muted); font-size: 0.86rem; }
+</style>
+<div class="wrap">
+  <div class="eyebrow"><span>音楽理論学習 · 全30回(予定・分量により前後)</span></div>
+  <div class="head" style="margin-bottom:0.3rem;">
+    <h1 style="font-size:1.9rem;">目次</h1>
+  </div>
+  <p class="desc">音楽理論をゼロから学ぶ、耳で聴くだけの講座です。Day1から順番に聴いてください。</p>
+  
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 1</span>基礎 ― 音・音程・音階</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/064af7ae-64c1-45bb-911b-bff19f5e44ab">
+          <span class="row-num">01</span>
+          <span class="row-body">
+            <span class="row-title">音とオクターブ</span>
+            <span class="row-desc">音は空気の振動であること、ドレミの「階名」と「音名」の違い、鍵盤の仕組み、そしてオクターブと周波数の関係を学ぶ回。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/06a6796a-52e1-430c-a411-d4fe50275dc9">
+          <span class="row-num">02</span>
+          <span class="row-body">
+            <span class="row-title">半音と全音</span>
+            <span class="row-desc">前回登場した「半音」を掘り下げ、半音2つ分の「全音」との違い、そして鍵盤の中で距離が変わる場所を学ぶ回。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/c17c721a-c3e3-45c1-9bcc-dd3eead25bb0">
+          <span class="row-num">03</span>
+          <span class="row-body">
+            <span class="row-title">音程の基礎</span>
+            <span class="row-desc">2つの音の距離を「度」という単位で数える方法を学ぶ回。2度・3度から、安定した響きを持つ5度、オクターブと同じ8度まで。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/33207c22-632d-410e-87ce-6e2f456ffe49">
+          <span class="row-num">04</span>
+          <span class="row-body">
+            <span class="row-title">音程の種類</span>
+            <span class="row-desc">同じ3度でも響きが違う理由を学ぶ回。長・短・完全・増・減という「音程の質」を、実際の響きと結びつけて理解する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/e3fe98c0-c77e-4255-9a30-aad2ae2ea496">
+          <span class="row-num">05</span>
+          <span class="row-body">
+            <span class="row-title">長音階</span>
+            <span class="row-desc">ドレミファソラシドの規則性を学ぶ回。全・全・半・全・全・全・半という並び方が、長音階(メジャースケール)の正体。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/302d26a1-11e4-4c33-a515-8faad8341dc9">
+          <span class="row-num">06</span>
+          <span class="row-body">
+            <span class="row-title">短音階</span>
+            <span class="row-desc">悲愴・月光の切なさの正体に迫る回。自然的・和声的・旋律的という3種類の短音階と、「導音」が生む強い戻りの感覚を学ぶ。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/c02e3ebf-f9b6-4977-afd5-cfcd9dff4953">
+          <span class="row-num">07</span>
+          <span class="row-body">
+            <span class="row-title">調号と五度圏</span>
+            <span class="row-desc">曲によってシャープ・フラットの数が違う理由を学ぶ回。五度圏の規則と、悲愴・月光にもつながる「平行調」の関係を理解する。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 2</span>和音の基礎</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/c85c3149-c05b-42c2-9780-8cd55198feb2">
+          <span class="row-num">08</span>
+          <span class="row-body">
+            <span class="row-title">三和音</span>
+            <span class="row-desc">和音の基本、三和音に入る回。長三和音と短三和音の作り方と、真ん中の音1つが曲全体の明るさを左右する仕組みを学ぶ。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/fad6e2b1-0122-404c-9b9a-73da2f808cd0">
+          <span class="row-num">09</span>
+          <span class="row-body">
+            <span class="row-title">減三和音と増三和音</span>
+            <span class="row-desc">三和音の残り2種類、減三和音と増三和音を学ぶ回。外側の音程そのものが緊張感を生む、不安定な響きの正体を理解する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/b7ba08e0-8562-46fe-910e-e923877ae763">
+          <span class="row-num">10</span>
+          <span class="row-body">
+            <span class="row-title">七の和音</span>
+            <span class="row-desc">三和音にもう1音重ねる七の和音、中でも最重要の属七の和音を学ぶ回。「主和音に帰りたがる力」の正体に迫る。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/59c1f399-46d9-4ee3-9498-97218b73254e">
+          <span class="row-num">11</span>
+          <span class="row-body">
+            <span class="row-title">和音の転回形</span>
+            <span class="row-desc">同じ和音でも一番下の音が変わると響きの重心が変わる、転回形を学ぶ回。低音の動きをなめらかにする実用的な理由も理解する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/7e5b834a-8ba7-407b-b772-50f8c2827794">
+          <span class="row-num">12</span>
+          <span class="row-body">
+            <span class="row-title">ダイアトニックコード</span>
+            <span class="row-desc">音階の音だけで作れる7つの和音、ダイアトニックコードを学ぶ回。長・短・短・長・長・短・減という規則性が、これまでの知識を1つにつなげる。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/10d92112-e017-4381-93bc-3805428dd2db">
+          <span class="row-num">13</span>
+          <span class="row-body">
+            <span class="row-title">主要三和音とカデンツ</span>
+            <span class="row-desc">I・IV・Vにトニック・サブドミナント・ドミナントという役割を与え、フレーズの終わり方(カデンツ)を学ぶ回。Phase2の総仕上げ。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/2fc686e7-e379-4ee2-b2b5-dceb8cb0333d">
+          <span class="row-num">14</span>
+          <span class="row-body">
+            <span class="row-title">実践1: 悲愴の和音進行</span>
+            <span class="row-desc">ここまでの理論を使って、悲愴ソナタ冒頭のグラーヴェ序奏を実際に聴き解く回。ハ短調のトニックから減七の和音、緊張感の強い属九の和音へ。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 3</span>リズムと拍子</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/1cf87054-ccc4-40fa-9cb5-25867e0a4faa">
+          <span class="row-num">15</span>
+          <span class="row-body">
+            <span class="row-title">拍子の基礎</span>
+            <span class="row-desc">Phase3の最初の回。2拍子・3拍子・4拍子という強弱のパターンを学び、悲愴のアレグロと月光の第一楽章が同じ拍子でできていることを知る。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/fee119d6-300f-41d4-bd4a-e5facf354266">
+          <span class="row-num">16</span>
+          <span class="row-body">
+            <span class="row-title">リズムパターンとシンコペーション</span>
+            <span class="row-desc">拍をさらに半分に分割したときに生まれるリズムの表情を学ぶ回。裏拍にアクセントを置くシンコペーションの独特な推進力を体感する。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 4</span>機能和声と転調</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/0e976f4e-ae20-4e08-bdae-b20887896ab1">
+          <span class="row-num">17</span>
+          <span class="row-body">
+            <span class="row-title">機能和声</span>
+            <span class="row-desc">Day13のトニック・サブドミナント・ドミナントを深掘りする回。残りの4つの和音がそれぞれどの機能の仲間かを整理し、Day13の偽終止の謎も解ける。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/b0b7e767-f0f3-4939-bd87-375d772959b2">
+          <span class="row-num">18</span>
+          <span class="row-body">
+            <span class="row-title">二次ドミナント</span>
+            <span class="row-desc">ドミナントの働きを、トニック以外の和音にも一時的に作り出す、二次ドミナントを学ぶ回。音階の外の音1つで生まれる「一瞬のトニック化」を体感する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/acc111b6-b0c2-4228-813b-d43616fe74e7">
+          <span class="row-num">19</span>
+          <span class="row-body">
+            <span class="row-title">借用和音</span>
+            <span class="row-desc">同主調(同じ主音を持つ長調と短調)から和音の色をそのまま借りてくる、借用和音を学ぶ回。二次ドミナントとの違いも整理する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/f1dbcaa6-bd1f-410f-9038-e7b567d373ff">
+          <span class="row-num">20</span>
+          <span class="row-body">
+            <span class="row-title">転調の基礎</span>
+            <span class="row-desc">Phase4最終回。二次ドミナントとは違い、新しい調を本当の主役として扱う「転調」と、橋渡し役のピボットコードを学ぶ。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 5</span>楽曲の構造</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/f8a54056-8e93-4f7b-8278-dfb2da41e7d6">
+          <span class="row-num">21</span>
+          <span class="row-body">
+            <span class="row-title">動機・フレーズ・楽節</span>
+            <span class="row-desc">Phase5「楽曲の構造」の最初の回。曲を組み立てる最小単位、動機からフレーズ、質問と答えのペアである楽節までを学ぶ。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/17e63609-fbf2-42b5-bbc0-2ebe09801fcc">
+          <span class="row-num">22</span>
+          <span class="row-body">
+            <span class="row-title">楽式</span>
+            <span class="row-desc">楽節が組み合わさってできる、曲全体の設計図を学ぶ回。前へ進み続ける二部形式と、円を描いて戻ってくる三部形式の違いを体感する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/b00f4421-a09d-46ff-b03a-efe48f469e8a">
+          <span class="row-num">23</span>
+          <span class="row-body">
+            <span class="row-title">ソナタ形式</span>
+            <span class="row-desc">月光ソナタ第一楽章を題材に、クラシック最重要の形式、ソナタ形式を学ぶ回。バラバラの調が最後に1つへまとまる仕組みを体感する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/19205801-6ee7-44f3-bf60-7cde984d9509">
+          <span class="row-num">24</span>
+          <span class="row-body">
+            <span class="row-title">変奏曲形式</span>
+            <span class="row-desc">1つの主題を姿を変えながら繰り返す、変奏曲形式を学ぶ回。旋法やリズムが変わっても、和音の役割の骨組みは保たれ続けることを体感する。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 6</span>作曲の基礎知識</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/d85099dd-f95e-4547-a9bb-ef2513419611">
+          <span class="row-num">25</span>
+          <span class="row-body">
+            <span class="row-title">対位法入門</span>
+            <span class="row-desc">Phase6「作曲の基礎知識」の最初の回。和音を縦の積み重ねとして見る発想から離れ、旋律同士を横に組み合わせる対位法の考え方を学ぶ。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/2105a8dd-2eae-418e-921f-001875ae7353">
+          <span class="row-num">26</span>
+          <span class="row-body">
+            <span class="row-title">非和声音</span>
+            <span class="row-desc">旋律に表情を与える3種類の非和声音、経過音・刺繍音・掛留音を学ぶ回。和音に含まれない音がどう旋律を歌わせているかを体感する。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/1f17e35e-f527-4f7a-8643-799290cab876">
+          <span class="row-num">27</span>
+          <span class="row-body">
+            <span class="row-title">コード進行のパターン</span>
+            <span class="row-desc">ジャンルを問わず使われる定番のコード進行を学ぶ回。I-V-vi-IV、50年代進行、ジャズのツーファイブワン、パッヘルベルのカノンまで。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/05dd9b98-e201-49e2-b827-325fd99c8b3c">
+          <span class="row-num">28</span>
+          <span class="row-body">
+            <span class="row-title">モーダルインターチェンジ</span>
+            <span class="row-desc">Phase6最終回。Day19の借用和音の考え方を広げ、フラット7番目の和音とナポリの和音という、さらに2つの色を手に入れる。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">Phase 7</span>総合実践</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/60a193a0-6f49-4b07-908b-c4cca1e40c90">
+          <span class="row-num">29</span>
+          <span class="row-body">
+            <span class="row-title">実践2: 月光を読み解く</span>
+            <span class="row-desc">Day23の続き。月光ソナタ第一楽章を、ベートーヴェン自身の演奏指示「センツァ・ソルディーノ」の視点も交えて、あらためて読み解く。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/71ef944e-1420-426f-9494-64c9cfe0f2a3">
+          <span class="row-num">30</span>
+          <span class="row-body">
+            <span class="row-title">実践3: 悲愴を読み解く/総まとめ</span>
+            <span class="row-desc">最終回。Day14の続きとして悲愴ソナタのアレグロを読み解き、月光との対比を通して、30日間の学びを締めくくる。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">連続再生</span>5話ずつのまとめ聞き</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/39158e3a-e856-47eb-98a0-d274cbefeb00">
+          <span class="row-num">▶</span>
+          <span class="row-body">
+            <span class="row-title">連続再生: Day1〜5</span>
+            <span class="row-desc">Day1〜5を1本につなげた、自転車での聞き流し用の連続再生版</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/75589202-7a28-4c71-a22e-7dad26c8a4c6">
+          <span class="row-num">▶</span>
+          <span class="row-body">
+            <span class="row-title">連続再生: Day6〜10</span>
+            <span class="row-desc">Day6〜10を1本につなげた、自転車での聞き流し用の連続再生版</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/60573adc-7752-4fa0-8080-066622519e0a">
+          <span class="row-num">▶</span>
+          <span class="row-body">
+            <span class="row-title">連続再生: Day11〜15</span>
+            <span class="row-desc">Day11〜15を1本につなげた、自転車での聞き流し用の連続再生版</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/9d971635-27ef-4caa-90fb-7ca201e4e1d6">
+          <span class="row-num">▶</span>
+          <span class="row-body">
+            <span class="row-title">連続再生: Day16〜20</span>
+            <span class="row-desc">Day16〜20を1本につなげた、自転車での聞き流し用の連続再生版</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/e325716c-2de9-4aab-bd30-104f3b8c3440">
+          <span class="row-num">▶</span>
+          <span class="row-body">
+            <span class="row-title">連続再生: Day21〜25</span>
+            <span class="row-desc">Day21〜25を1本につなげた、自転車での聞き流し用の連続再生版</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/f85fcd30-6547-483b-9ec5-417ce324e3f6">
+          <span class="row-num">▶</span>
+          <span class="row-body">
+            <span class="row-title">連続再生: Day26〜30</span>
+            <span class="row-desc">Day26〜30を1本につなげた、自転車での聞き流し用の連続再生版</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  
+    <section class="phase-group">
+      <h2 class="phase-heading"><span class="phase-label">おまけ</span>単発のリクエスト回</h2>
+      <div class="phase-rows">
+        
+        <a class="row" href="https://claude.ai/code/artifact/7c03e55e-af97-4f9f-a24c-6916ced3657a">
+          <span class="row-num">EX</span>
+          <span class="row-body">
+            <span class="row-title">エンドレスレインを読み解く</span>
+            <span class="row-desc">おまけの回。X JAPANの名曲を、実際のシ長調の響きで、これまで学んだ理論(転回形・対位法・転調)を使って読み解く。</span>
+          </span>
+        </a>
+        <a class="row" href="https://claude.ai/code/artifact/bc9de2ce-e212-4c58-9f04-9196a4b4ce8a">
+          <span class="row-num">EX</span>
+          <span class="row-body">
+            <span class="row-title">耳のリセットドリル</span>
+            <span class="row-desc">おまけの回。黒鍵の多い調(ロ長調など)を耳コピーしたあとに聴く、実用的なリセット用ドリル。とにかくたくさんの音を鳴らす回。</span>
+          </span>
+        </a>
+      </div>
+    </section>
+</div>
