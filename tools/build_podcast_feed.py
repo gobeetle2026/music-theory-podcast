@@ -47,11 +47,41 @@ def format_duration(seconds):
     return f"{m}:{s:02d}"
 
 
-def episode_item(*, guid, title, description, audio_rel_path, pub_date, episode_num=None, season=1, episode_type="full"):
+def plain_transcript(dir_name):
+    """WebページのHTML台本表示(bp.load_transcript_html)と同じ変換ロジックで、
+    RSSのdescription用にプレーンテキスト版の台本全文を作る(段落は空行区切り)。"""
+    script_path = os.path.join(BASE, "days", dir_name, "script.md")
+    with open(script_path, encoding="utf-8") as f:
+        lines = [l.rstrip("\n") for l in f]
+    parts = []
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if re.match(r'^\[PAUSE:[\d.]+\]$', stripped):
+            continue
+        tone = bp.note_marker_to_text(stripped)
+        if tone:
+            parts.append(tone)
+        else:
+            parts.append(bp.EN_DISPLAY_PATTERN.sub(lambda m: f" ({m.group(1)})", stripped))
+    return "\n\n".join(parts)
+
+
+def html_transcript(dir_name):
+    return bp.load_transcript_html(dir_name)
+
+
+def episode_item(*, guid, title, summary, dir_name, audio_rel_path, pub_date, episode_num=None, season=1, episode_type="full"):
     audio_path = os.path.join(BASE, audio_rel_path)
     size_bytes = os.path.getsize(audio_path)
     duration = get_duration_seconds(audio_path)
     url = f"{BASE_URL}/{quote(audio_rel_path)}"
+
+    full_text = plain_transcript(dir_name)
+    description = f"{summary}\n\n――――――――――\n\n{full_text}"
+    content_html = f"<p>{escape(summary)}</p><hr/>\n" + html_transcript(dir_name)
+    content_cdata = content_html.replace("]]>", "] ]>")
 
     extra = ""
     if episode_num is not None:
@@ -62,7 +92,8 @@ def episode_item(*, guid, title, description, audio_rel_path, pub_date, episode_
     return f"""    <item>
       <title>{escape(title)}</title>
       <description>{escape(description)}</description>
-      <itunes:summary>{escape(description)}</itunes:summary>
+      <content:encoded><![CDATA[{content_cdata}]]></content:encoded>
+      <itunes:summary>{escape(summary)}</itunes:summary>
       <guid isPermaLink="false">{escape(guid)}</guid>
       <pubDate>{format_datetime(pub_date)}</pubDate>
       <enclosure url="{escape(url)}" length="{size_bytes}" type="audio/x-m4a"/>
@@ -79,7 +110,8 @@ def build_items():
         xml = episode_item(
             guid=f"music-theory-podcast-day{day['num']:02d}",
             title=f"第{day['num']}回 {day['title']}",
-            description=day["desc"],
+            summary=day["desc"],
+            dir_name=day["dir"],
             audio_rel_path=f"days/{day['dir']}/audio.m4a",
             pub_date=pub_date,
             episode_num=day["num"],
@@ -93,7 +125,8 @@ def build_items():
         xml = episode_item(
             guid=f"music-theory-podcast-{entry['id']}",
             title=f"おまけ {entry['title']}",
-            description=entry["desc"],
+            summary=entry["desc"],
+            dir_name=entry["dir"],
             audio_rel_path=f"days/{entry['dir']}/audio.m4a",
             pub_date=pub_date,
             episode_num=None,
