@@ -20,6 +20,7 @@ import build_player_page as bp
 
 BASE = bp.BASE
 BASE_URL = "https://gobeetle2026.github.io/music-theory-podcast"
+FEED_URL = f"{BASE_URL}/feed.xml"
 COVER_URL = f"{BASE_URL}/web/cover.png"
 FEED_PATH = os.path.join(BASE, "feed.xml")
 
@@ -110,10 +111,11 @@ def build_feed():
     last_build = format_datetime(datetime.now(timezone.utc))
 
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{escape(bp.SERIES_TITLE)}</title>
     <link>{escape(BASE_URL)}</link>
+    <atom:link href="{escape(FEED_URL)}" rel="self" type="application/rss+xml"/>
     <language>ja</language>
     <description>{escape("自転車に乗りながら聴くだけで学べる、ゼロからの音楽理論講座。Day1から順番に、音の基礎から和声・楽式まで体系的に学ぶ。")}</description>
     <itunes:summary>自転車に乗りながら聴くだけで学べる、ゼロからの音楽理論講座。Day1から順番に、音の基礎から和声・楽式まで体系的に学ぶ。</itunes:summary>
