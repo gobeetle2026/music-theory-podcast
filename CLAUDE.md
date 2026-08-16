@@ -117,6 +117,34 @@ python3 tools/build_audio.py days/day01_音とオクターブ/script.md days/day
     新しいPhaseを追加する場合は `build_player_page.py` の `PHASES` リストにも追記する
 - Artifactは既定で非公開。ユーザーはclaude.aiにログインした状態でアクセスする想定
 
+## Podcast配信(2026-08-16〜)
+再生操作(倍速・一時停止・ダウンロード・続き再生)をPodcastアプリに任せられるよう、
+Webページ方式と並行してPodcast配信も用意している。
+
+- リポジトリ: https://github.com/gobeetle2026/music-theory-podcast (public、GitHub Pagesで配信)
+  - `git init`済みのこのディレクトリ(`音楽理論学習/`)自体がリポジトリのルート
+  - GitHub Pages無料枠は公開リポジトリでのみ利用可能なため、公開リポジトリにしている
+    (URLを知っていれば誰でも音声・台本にアクセス可能。ユーザーの許可済み、2026-08-16)
+  - 認証は `gh auth login` 済み(アカウント: gobeetle2026、AnimeGoと同じアカウント)
+- 公開URL: `https://gobeetle2026.github.io/music-theory-podcast/`
+  - PodcastフィードURL: `https://gobeetle2026.github.io/music-theory-podcast/feed.xml`
+  - カバーアート: `web/cover.png`(1400×1400、`tools/`に生成スクリプトはなく都度PIL手動生成。ヒラギノ角ゴシックで作成)
+- `tools/build_podcast_feed.py` が `build_player_page.py` の `DAYS`/`BONUS` を読み込み、
+  各Dayのaudio.m4aから `afinfo`(macOS標準)で長さを取得してRSS(iTunes拡張タグ付き)を `feed.xml` に生成する
+  - おまけ回は `itunes:episodeType=bonus`、本編は `itunes:episode` にDay番号を設定
+  - 実際の配信日ではなく、Day1を起点に1日ずつずらした架空のpubDateを使う(podcastアプリでの並び順を安定させるため)
+  - 連続再生プレイリスト(playlists/)はPodcastフィードには含めていない
+    (Podcastアプリ自体に連続再生・キュー機能があるため、Web版専用の仕組みとして残す)
+- 新しいDay/おまけ回を追加したときの公開手順:
+  1. 通常通り `days/dayNN_.../` に script.md・audio.m4a を作成
+  2. `build_player_page.py` の `DAYS`(または`BONUS`)に追記(Web版と共通)
+  3. `python3 tools/build_podcast_feed.py` でfeed.xml再生成
+  4. `git add -A && git commit && git push`
+  5. GitHub Pagesの再ビルドを待ち(`gh api repos/gobeetle2026/music-theory-podcast/pages/builds/latest --jq .status`が`built`になるまで)、
+     `curl` で新しいエピソードのenclosure URLが200を返すことを確認する
+- Podcastアプリでの購読方法: 各アプリの「URLでフォロー/購読」機能に上記フィードURLを貼り付ける
+  (Apple Podcasts配信元ディレクトリへの申請はしていない、フィードURL直接指定のみ)
+
 ## 連続再生モード(自転車での聞き流し用、2026-08-16〜)
 - `tools/build_playlist.py <開始Day> <話数> playlists/playlistNN_dayXX-YY/audio.m4a` で、
   指定した範囲のDayのaudio.m4aを1本につなげた音声を生成する(各Dayの間に「第N回です」という
@@ -149,6 +177,7 @@ python3 tools/build_audio.py days/day01_音とオクターブ/script.md days/day
 - 今後、追加のDayや改修依頼があれば、既存の仕組み(TONE/BEAT/PAUSE/EN併記/発音辞書/クイズジャンプ/
   Phase別目次/おまけ回/連続再生)を踏襲する。curriculum.mdはPhase7(Day29-30)で完結しており、
   本編を延長する場合はcurriculum.mdにも新しいPhase/Dayを追記すること
+- 直近の変更: 2026-08-16、GitHub Pages + feed.xmlによるPodcast配信を追加(リポジトリ化、tools/build_podcast_feed.py新規作成)
 - 直近の変更: 2026-08-16、連続再生モード(playlist01〜06)を追加
 - ユーザーは絶対音感を持つが、黒鍵比率の高い調(特にロ長調 = シレ#ファ#)を、隣接する
   白鍵の和音(ハ長調)と取り違えやすいと感じている。これは絶対音感保持者に一般的な、
