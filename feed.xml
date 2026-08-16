@@ -21,7 +21,7 @@
     <itunes:category text="Education"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>Sun, 16 Aug 2026 08:05:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 08:29:55 +0000</lastBuildDate>
     <item>
       <title>おまけ 耳のリセットドリル</title>
       <description>おまけの回。黒鍵の多い調(ロ長調など)を耳コピーしたあとに聴く、実用的なリセット用ドリル。とにかくたくさんの音を鳴らす回。
@@ -414,7 +414,7 @@ Day20で学んだ近親調への転調に比べると、シ長調とソ長調は
       <itunes:summary>おまけの回。X JAPANの名曲を、実際のシ長調の響きで、これまで学んだ理論(転回形・対位法・転調)を使って読み解く。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-bonus01</guid>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/bonus01_%E3%82%A8%E3%83%B3%E3%83%89%E3%83%AC%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%B3/audio.m4a" length="2864915" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/bonus01_%E3%82%A8%E3%83%B3%E3%83%89%E3%83%AC%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%B3/audio.m4a" length="2861100" type="audio/x-m4a"/>
       <itunes:duration>6:14</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>bonus</itunes:episodeType>
@@ -664,7 +664,7 @@ Day19では、同主調のハ短調から、4番目の和音、そして6番目�
       <itunes:summary>Phase6最終回。Day19の借用和音の考え方を広げ、フラット7番目の和音とナポリの和音という、さらに2つの色を手に入れる。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day28</guid>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day28_%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8/audio.m4a" length="2291907" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day28_%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8/audio.m4a" length="2291349" type="audio/x-m4a"/>
       <itunes:duration>4:56</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -939,7 +939,7 @@ Day26を始めましょう。前回は、対位法入門について学びまし
       <itunes:summary>旋律に表情を与える3種類の非和声音、経過音・刺繍音・掛留音を学ぶ回。和音に含まれない音がどう旋律を歌わせているかを体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day26</guid>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day26_%E9%9D%9E%E5%92%8C%E5%A3%B0%E9%9F%B3/audio.m4a" length="2494670" type="audio/x-m4a"/>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day26_%E9%9D%9E%E5%92%8C%E5%A3%B0%E9%9F%B3/audio.m4a" length="2491775" type="audio/x-m4a"/>
       <itunes:duration>5:26</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
@@ -1042,8 +1042,8 @@ Day25を始めましょう。前回は、変奏曲形式について学びまし
       <itunes:summary>Phase6「作曲の基礎知識」の最初の回。和音を縦の積み重ねとして見る発想から離れ、旋律同士を横に組み合わせる対位法の考え方を学ぶ。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day25</guid>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day25_%E5%AF%BE%E4%BD%8D%E6%B3%95%E5%85%A5%E9%96%80/audio.m4a" length="2549412" type="audio/x-m4a"/>
-      <itunes:duration>5:30</itunes:duration>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day25_%E5%AF%BE%E4%BD%8D%E6%B3%95%E5%85%A5%E9%96%80/audio.m4a" length="2523461" type="audio/x-m4a"/>
+      <itunes:duration>5:27</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
       <itunes:episode>25</itunes:episode>
@@ -1163,8 +1163,8 @@ Day24を始めましょう。前回は、ソナタ形式について学びまし
       <itunes:summary>1つの主題を姿を変えながら繰り返す、変奏曲形式を学ぶ回。旋法やリズムが変わっても、和音の役割の骨組みは保たれ続けることを体感する。</itunes:summary>
       <guid isPermaLink="false">music-theory-podcast-day24</guid>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day24_%E5%A4%89%E5%A5%8F%E6%9B%B2%E5%BD%A2%E5%BC%8F/audio.m4a" length="2189595" type="audio/x-m4a"/>
-      <itunes:duration>4:43</itunes:duration>
+      <enclosure url="https://gobeetle2026.github.io/music-theory-podcast/days/day24_%E5%A4%89%E5%A5%8F%E6%9B%B2%E5%BD%A2%E5%BC%8F/audio.m4a" length="2184499" type="audio/x-m4a"/>
+      <itunes:duration>4:42</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:season>1</itunes:season>
       <itunes:episode>24</itunes:episode>
